@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&display=swap');
+
 body {
   margin: 0;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   
 }
-/* CSS */
 
+/* CSS */
+.colorp
+{
+  color: #679ef1;
+}
 .nav-bar{
   display: flex;
   align-items: center;
@@ -16,6 +22,7 @@ body {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin: 0;
+  
 }
 
 .nav-bar ul{
@@ -51,29 +58,32 @@ body {
   opacity: 1;
   background-image: radial-gradient(#444cf7 0.7px, #e5e5f7 0.8px);
   background-size: 18px 18px;
+  
  
 }
 
 .profileimage
 {
   height: 600px;
-  position: relative;
+  width: auto;
+  position: absolute;
   z-index: 1;
+
   
 }
 .homepage-imagen
 {
   position: relative;
-  top: -50px;
-  left: 100px;
+  top: -300px;
+  left: -200px;
   z-index: 0;
 }
 
 .homepage-text
 { 
   position: relative;
-  top: 300px;
-  left: -150px;
+  top: 0px;
+  left: -100px;
   z-index: 1;
   background-color: #679ef1;
   height: auto;
@@ -124,19 +134,23 @@ body {
 .homepage-contenido
 {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 750px) {
   .homepage-text
   {
-    top: 400px;
+    top: 50px;
     left: 0px;
     font-size: 10px;
+    
   }
   .homepage-imagen
   {
-   top: -10;
-    left: 0;
+    
+    left: -350px;
   }
 }
 
@@ -187,7 +201,7 @@ body {
   }
 }
 
-
+/*about css */
 
 .aboutpage-div
 {  display: flex;
@@ -202,16 +216,20 @@ body {
 .aboutpage-contenido
 {
   position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   
 }
 .about-content-card
 {
   display: flex;
   position: relative;
-  top: -300px;
+  top: 0px;
   left: 200px;
   background-color: #252525;
-  color: white;
+  background-color: white;
+  color: rgb(0, 0, 0);
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -220,7 +238,7 @@ body {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   padding: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Cal Sans", sans-serif;
     box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
@@ -229,7 +247,7 @@ body {
 
 .aboutpage-image-div{
   position: relative;
-  top: 200px;
+  top: -300px;
   left: -200px;
 }
 
@@ -245,18 +263,35 @@ body {
   background-color: white;
 }
 
+.about-card-title
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: px solid red;
+  width: 100%;
+  padding: 5px;
+}
 
+.about-card-title h1,h2,h5{
+  margin: 0px;
+}
+.about-card-title h5{
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 16px;
+}
 
 
 @media (max-width: 870px) {
   .about-content-card
   {
-    top: -250px;
+    top: 100px;
     left: 0;
+    width: 80%;
   }
   .aboutpage-image-div
   {
-    top: 100px;
+    top: -400px;
     left: 0px;
   }
 }
@@ -280,12 +315,13 @@ body {
   width: 80%;
   justify-content: center;
   align-items: center;
+ 
 }
 .title-line h1{
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 100px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Cal Sans", sans-serif;
 }
 @media (max-width: 600px) {
   .title-line h1{
@@ -293,27 +329,162 @@ body {
   }
 }
 /*skills css */
-.skills-card
+.skills-content-div
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 40px;
   height: 600px;
-  width: 600px;
+  min-width: 900px;
+  border: 1px solid rebeccapurple;
 }
+.skills-card-name
+{display: flex;
+  border: 1px solid rgb(0, 0, 0)e;
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  border: px solid rgb(53, 53, 53);
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skills-card-name h3{
+  margin: 0;
+  margin-left: 10px;
+  
+}
+.skills-card{
+  display: flex;
+  height: 150px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  background-color: #ee80272f;
+  flex-direction: column;
+  gap: px;
+
+}
+
+.skills-card-logo-div{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 200px;
+ border: px solid rgb(61, 61, 61);
+ 
+}
+
+
 .skillspage-div
 {
   display: flex;
+  flex-direction: column;
   background-color: #1f1f1f;
   width: 100%;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
   border: px solid rgb(0, 0, 0);
- border-top-right-radius: 100px;
- border-top-left-radius: 100px;
+ border-top-right-radius: 60px;
+ border-top-left-radius: 60px;
+ margin-top: 80px;
+}
+.tech-skills-container
+{
+  border: px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 20px;
+}
+.tech-skills-card
+{
+  border: 2px solid #679ef1;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 300px;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
+  margin: 15px;
+}
+.tech-logo-div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 120px;
+  border: px solid red;
+}
+.tech-images
+{ 
+  width: 60px;
+  height: 65px;
+}
+.tech-skills-title
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid white;
+  color: #e5e5f7;
+  font-family: "Cal Sans", sans-serif;
+  
+}
+.tech-skills-title h2{
+  font-weight: 400;
+  
+}
+
+.tech-skills-description
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: px solid red;
+  text-align: left;
+  color: white;
+  min-height: 250px;
+  width: 100%;
+  
+}
+.tech-skills-description p{
+  margin-top: 80px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.skills-title
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  height: auto;
+  width: 100%;
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Cal Sans", sans-serif;
+  
+}
+.skills-title h2{
+  font-weight: 400;
 }
 
 /* Projects css */
@@ -321,25 +492,28 @@ body {
 .projects-div
 {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
   background-color: #ffffff;
-  border: 2px solid rgb(29, 228, 46);
+  border: px solid rgb(29, 228, 46);
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .projects-content
 {
   position: relative;
   border: px solid rgb(228, 29, 185);
-  min-width: 90%;
- height: auto;
+  
 }
 .projects-logo
 {
  position: relative;
  display: flex;
  justify-content: center;
- top: -50;
+ top: 0px;
+ left: 0px;
  border: px solid rgb(228, 29, 29);
 }
 .projects-container-card
@@ -351,7 +525,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: -400px;
+  margin-top: 250px;
+  top: 0px;
   left: 0px;
   z-index: 1;
   border: px solid rgb(41, 110, 93);
@@ -403,7 +578,6 @@ body {
   width: auto;
   height: auto;
   align-items: center;
-  
   flex-direction: column;
   margin: 0;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -422,6 +596,8 @@ body {
   justify-content: center;
   align-items: center;
   border: px solid red;
+  padding: 10px;
+  
 
 }
 .code-button
@@ -453,6 +629,7 @@ body {
 .projects-skills-container
 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   border: px solid rgb(0, 0, 0);
@@ -507,4 +684,60 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.profileimage1
+{
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+}
+/* css for responsive projects sections */
+@media (max-width: 900px) {
+  .projects-card
+  {
+    width: 95%;
+    
+  }
+  .project-image
+  {
+    width: 150%;
+    height: auto;
+    
+  }
+  .projects-card:hover img
+  {
+    transform: scale(1.09); 
+  }
+  .projects-text
+  {
+    
+    
+  }
+  
+}
+@media (max-width: 600px) {
+  
+  .project-image
+  {
+    width: 180%;
+    height: auto;
+    
+  }
+  .projects-card:hover img
+  {
+    transform: scale(1.03); 
+  }
+ .projects-text-title h1
+ {
+  font-size: 25px;
+ }
+}
+
+@media (max-width: 480px) {
+
+  .projects-card
+  {
+    height: 300px;
+  }
 }

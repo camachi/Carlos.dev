@@ -12,7 +12,16 @@ function About()
             </div>
             
             <div className='about-content-card'>
-                <h1>Hi!</h1>
+                <div className='about-card-title'>
+                <h5>Hi, my name is</h5>
+                </div>
+                <div className='about-card-title'>
+                <h1>Carlos Manuel.</h1>
+                </div>
+                <div className='about-card-title'>
+                <h1><span className='colorp'>Software Developer</span>.</h1>
+                </div>
+                
                 <p>
                  I'm a software developer with a strong passion for building web applications and interactive experiences.
                  I specialize in full-stack development using technologies like JavaScript, React, PHP, C#, and Sql.
