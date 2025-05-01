@@ -49,12 +49,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: white;
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
   border: px solid red;
   background-color: #e5e5f7;
-  flex-direction: column;
+  
   opacity: 1;
   background-image: radial-gradient(#444cf7 0.7px, #e5e5f7 0.8px);
   background-size: 18px 18px;
@@ -71,39 +72,75 @@ body {
 
   
 }
+.profileimage0
+{
+  height: 600px;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
 .homepage-imagen
 {
   position: relative;
-  top: -300px;
-  left: -200px;
-  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }
 
 .homepage-text
 { 
   position: relative;
-  top: 0px;
-  left: -100px;
+  top: 65px;
+  left: 0px;
   z-index: 1;
-  background-color: #679ef1;
   height: auto;
-  border-radius: 10px;
-  padding: 10px;
+  width: 100%;
+  
+  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid black;
-  box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
+  border: px solid black;
+  
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  z-index: 0;
   
 }
-.homepage-text h1{
-  font-size: 40px;
-  font-weight: bold;
+.homepage-text-footer
+{
+  position: relative;
+  top: -100px;
+  left: 0px;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: px solid black;
+  
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  z-index: 1;
+  
+}
+.homepage-text-footer h1{
+  font-size: 100px;
+  
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+.homepage-text h1{
+  font-size: 100px;
+  
+  margin: 0;
+ 
 }
 .homepage-text h2{
   margin-top: 0px;
@@ -113,44 +150,87 @@ body {
 {
   display: flex;
   width: 100px;
-  height: 40px;
-  text-align: center;
+  height: auto;
+  text-align: left;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: rgb(255, 255, 255);
-  border: 2px solid black;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
-  transition: 0.8s ease;
+  transition: 0.2s ease;
+  gap: 10px;
+}
+.arrow-image
+{
+  height: 20px;
+  width: auto;
 }
 .hireme-button:hover
 {
-  box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
+  border-bottom: 3px solid black;
 }
 .homepage-contenido
 {
   position: relative;
   display: flex;
+  height: 600px;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  border: px solid black;
 }
 
-@media (max-width: 750px) {
-  .homepage-text
+
+@media (max-width: 940px)
+{
+  .homepage-text-footer h1
   {
-    top: 50px;
-    left: 0px;
-    font-size: 10px;
     
+    font-size: 80px; 
+  }
+}
+@media (max-width: 750px) {
+  .homepage-text h1
+  {
+    
+    font-size: 55px;
+    
+  }
+  .homepage-text{
+    top: 48px;
+  }
+  .homepage-text-footer h1
+  {
+    
+    font-size: 40px; 
+  }
+  .homepage-text-footer{
+    top: -80px;
   }
   .homepage-imagen
   {
     
-    left: -350px;
+   
+  }
+}
+
+@media (max-width: 400px)
+{
+  .homepage-text-footer h1
+  {
+    
+    font-size: 36px; 
+  }
+  .homepage-text
+  {
+    top: 40px;
+  }
+  .homepage-text h1{
+    font-size: 50px;
   }
 }
 
@@ -243,6 +323,15 @@ body {
   -webkit-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
   z-index: 1;
+  transition: 0.2s ease;
+  
+}
+
+.about-content-card:hover
+{ transform: scale(1.018);
+  box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
+  -webkit-box-shadow: 0px 2px 17px 0px rgba(9, 239, 255, 0.75);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
 }
 
 .aboutpage-image-div{
@@ -334,49 +423,76 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 40px;
-  height: 600px;
-  min-width: 900px;
-  border: 1px solid rebeccapurple;
+  height: auto;
+  width: 50%;
+  border: px solid rebeccapurple;
+  padding: 10px;
+  gap: 15px;
 }
-.skills-card-name
-{display: flex;
-  border: 1px solid rgb(0, 0, 0)e;
-  width: 100%;
-  height: 80px;
-  background-color: #000000;
-  border: px solid rgb(53, 53, 53);
-  color: white;
-  justify-content: flex-start;
-  align-items: center;
+@media(max-width: 750px)
+{
+  .skills-content-div
+  {
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+  }
 }
-.skills-card-name h3{
-  margin: 0;
-  margin-left: 10px;
-  
-}
+
+
 .skills-card{
   display: flex;
-  height: 150px;
-  width: 250px;
+  height: 40px;
+  width: auto;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000000;
-  background-color: #ee80272f;
-  flex-direction: column;
-  gap: px;
+  border: 1px solid #8f8f8f;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: #ee812700;
+  padding: 5px 10px;
+  gap: 8px;
+  transition: 0.2s ease-in;
 
 }
+.skills-card:hover{
+  background-color: #e5e5f70e;
+}
+.skills-card h4{
+  margin: 0px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
 
-.skills-card-logo-div{
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
- height: 200px;
- border: px solid rgb(61, 61, 61);
- 
+.tech-images
+{ 
+  width: 35px;
+  height:auto;
+}
+.skills-description
+{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border: px solid rebeccapurple;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  width: 50%;
+  height: auto;
+
+}
+@media(max-width: 750px)
+{
+  .skills-description
+  {
+    width: 95%;
+  }
 }
 
 
@@ -394,6 +510,15 @@ body {
  border-top-left-radius: 60px;
  margin-top: 80px;
 }
+
+@media(max-width: 750px)
+{
+  .skillspage-div
+  {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+}
 .tech-skills-container
 {
   border: px solid red;
@@ -405,7 +530,7 @@ body {
   width: 100%;
   margin-top: 200px;
   margin-bottom: 200px;
-  padding: 20px;
+  
 }
 .tech-skills-card
 {
@@ -422,6 +547,14 @@ body {
   -webkit-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
   margin: 15px;
+  transition: 0.5s ease;
+}
+.tech-skills-card:hover
+{
+  transform: scale(1.05); 
+  box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
+  -webkit-box-shadow: 0px 2px 17px 0px rgba(9, 239, 255, 0.75);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
 }
 .tech-logo-div
 {
@@ -432,11 +565,7 @@ body {
   min-height: 120px;
   border: px solid red;
 }
-.tech-images
-{ 
-  width: 60px;
-  height: 65px;
-}
+
 .tech-skills-title
 {
   display: flex;
@@ -453,6 +582,9 @@ body {
   font-weight: 400;
   
 }
+.skills-title p{
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .tech-skills-description
 {
@@ -466,6 +598,8 @@ body {
   width: 100%;
   
 }
+
+
 .tech-skills-description p{
   margin-top: 80px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -475,10 +609,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: px solid red;
   height: auto;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: white;
   font-family: "Cal Sans", sans-serif;
   
@@ -580,7 +714,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cal Sans", sans-serif;
   border: px solid red;
   margin-bottom: 40px;
 
@@ -588,6 +722,7 @@ body {
 .projects-text h1{
   margin: 0;
   font-size: 40px;
+
 }
 
 .projects-text-description
@@ -597,8 +732,17 @@ body {
   align-items: center;
   border: px solid red;
   padding: 10px;
-  
+  height: auto;
+  width: 50%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 
+}
+@media(max-width: 750px)
+{
+  .projects-text-description
+  {
+    width: 95%;
+  }
 }
 .code-button
 { 
@@ -621,9 +765,6 @@ body {
 .code-button:hover{
   width: 105px;
   height: 32px;
-  box-shadow: 2px 4px 18px 2px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 2px 4px 18px 2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 4px 18px 2px rgba(0,0,0,0.75);
 }
 
 .projects-skills-container
@@ -635,6 +776,7 @@ body {
   border: px solid rgb(0, 0, 0);
   width: 100%;
   height: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .projects-skills-card
 {
@@ -648,6 +790,11 @@ body {
   color: #ffffff;
   font-weight: bold;
   margin: 10px;
+  transition: 0.3s ease;
+}
+.projects-skills-card:hover
+{
+  transform: scale(1.04);
 }
 .projects-text-buttons
 {
@@ -677,9 +824,7 @@ body {
 {
   width: 105px;
   height: 32px;
-  box-shadow: 2px 4px 18px 2px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 2px 4px 18px 2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 4px 18px 2px rgba(0,0,0,0.75);
+  
 }
 a {
   text-decoration: none;

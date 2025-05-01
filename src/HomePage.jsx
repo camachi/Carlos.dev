@@ -1,20 +1,22 @@
 import profileImg from './assets/profile2.png';
+
 function HomePage()
 {
   return(
     <div className="homepage-div">
+      <div className='homepage-text'>
+            <h1>Carlos <span className='colorp'>Manuel</span>.</h1>
+            
+            
+        </div>
         <div className="homepage-contenido">
-           <div className='homepage-text'>
-            <h1>Carlos Manuel</h1>
-            <h2>Software Dev / Full-Stack Dev</h2>
-            <button className='hireme-button'>Hire Me!</button>
-           </div>
-
            <div className='homepage-imagen'>
-            <img className='profileimage' src={profileImg} alt="Foto de perfil" />
+            <img className='profileimage0' src={profileImg} alt="Foto de perfil" />
             </div>
         </div>
-        
+        <div className='homepage-text-footer'>
+            <h1><span className='colorp'>Software</span> Developer.</h1>
+        </div>
     </div>
   );  
 }

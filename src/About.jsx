@@ -1,4 +1,5 @@
 import profileImg from './assets/profile3.png';
+import arrowimg from './assets/arrow.png';
 function About()
 {
     return(
@@ -32,6 +33,12 @@ function About()
                 <p>
                 I believe in clean, maintainable code and thoughtful UI/UX that enhances the user's journey.
                 </p>
+                <div className='about-card-title'>
+                <button className='hireme-button'>Hire Me! <img className='arrow-image' src={arrowimg} alt="arrow image svg" /></button>
+                
+                </div>
+                
+                
             </div>
             </div>
         </div>
