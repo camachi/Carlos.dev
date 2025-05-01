@@ -1,5 +1,6 @@
 import profileImg from './assets/profile3.png';
 import arrowimg from './assets/arrow.png';
+import { motion } from 'framer-motion';
 function About()
 {
     return(
@@ -9,10 +10,15 @@ function About()
             <div className='aboutpage-contenido'>
             <div className="aboutpage-image-div">
             <img className='profileimage' src={profileImg} alt="Foto de perfil" />
-            
             </div>
-            
-            <div className='about-content-card'>
+            </div>
+            <div className='aboutcontent-fix-div'>
+            <motion.div
+            initial={{opacity:0, x: -100}}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{duration: 0.8,ease: "easeOut" }}
+            viewport={{ once: true }}
+            className='about-content-card'>
                 <div className='about-card-title'>
                 <h5>Hi, my name is</h5>
                 </div>
@@ -39,7 +45,7 @@ function About()
                 </div>
                 
                 
-            </div>
+            </motion.div>
             </div>
         </div>
     

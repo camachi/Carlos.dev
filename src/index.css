@@ -79,9 +79,12 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .homepage-imagen
 {
   position: relative;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,15 +214,14 @@ body {
   .homepage-text-footer{
     top: -80px;
   }
-  .homepage-imagen
-  {
-    
-   
-  }
+  
 }
 
-@media (max-width: 400px)
-{
+@media (max-width: 420px)
+{ .profileimage0
+  {
+    height: 500px;
+  }
   .homepage-text-footer h1
   {
     
@@ -227,10 +229,13 @@ body {
   }
   .homepage-text
   {
-    top: 40px;
+    top: 90px;
   }
   .homepage-text h1{
     font-size: 50px;
+  }
+  .homepage-text-footer{
+    top: -110px;
   }
 }
 
@@ -245,7 +250,7 @@ body {
   width: 100%;
   height: 95px;
   background-color: #679ef1;
-  
+ 
   
     --s: 16px; /* control the size*/
     --c1: #679ef1;
@@ -286,20 +291,34 @@ body {
 .aboutpage-div
 {  display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   position: relative;
   background-color: white;
   width: 100%;
   height: 110vh;
+  margin-bottom: 150px;
+  margin-top: 150px;
   
 }
 .aboutpage-contenido
 {
   position: relative;
+  border: px solid red;
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 100%;
+  height: auto;
   
+}
+.aboutcontent-fix-div
+{
+  border: px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-content-card
 {
@@ -323,7 +342,7 @@ body {
   -webkit-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.75);
   z-index: 1;
-  transition: 0.2s ease;
+  
   
 }
 
@@ -334,10 +353,17 @@ body {
   -moz-box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
 }
 
+
 .aboutpage-image-div{
   position: relative;
-  top: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 240px;
   left: -200px;
+  width: 100%;
+  height: auto;
+  border: px solid red;
 }
 
 .aboutpage-title
@@ -369,21 +395,29 @@ body {
  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  font-size: 16px;
 }
-
-
 @media (max-width: 870px) {
   .about-content-card
   {
-    top: 100px;
-    left: 0;
-    width: 80%;
+    top: 0px;
+    left: 0px;
+    width: 85%;
+    
   }
   .aboutpage-image-div
   {
-    top: -400px;
+    top: 0px;
     left: 0px;
+    
   }
+  .profileimage
+  {
+    height: 500px;
+  }
+  
 }
+
+
+
 
 /*titlecss*/
 
@@ -392,9 +426,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  min-height: 150px;
   width: 100%;
   background-color: white;
+  
 }
 
 .title-line
@@ -404,6 +439,10 @@ body {
   width: 80%;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  
  
 }
 .title-line h1{
@@ -429,7 +468,7 @@ body {
   height: auto;
   width: 50%;
   border: px solid rebeccapurple;
-  padding: 10px;
+  
   gap: 15px;
 }
 @media(max-width: 750px)
@@ -458,6 +497,24 @@ body {
   transition: 0.2s ease-in;
 
 }
+.tech-images
+{ 
+  width: 35px;
+  height:auto;
+}
+
+@media(max-width: 430px)
+{
+  .skills-card
+  {
+    width: 140px;
+  }
+  .tech-images
+  {
+    height: 25px;
+    width: 25px;
+  }
+}
 .skills-card:hover{
   background-color: #e5e5f70e;
 }
@@ -468,11 +525,7 @@ body {
   font-weight: 500;
 }
 
-.tech-images
-{ 
-  width: 35px;
-  height:auto;
-}
+
 .skills-description
 {
   color: white;
@@ -482,7 +535,7 @@ body {
   text-align: left;
   border: px solid rebeccapurple;
   font-family: 'Courier New', Courier, monospace;
-  padding: 20px;
+  
   width: 50%;
   height: auto;
 
@@ -639,7 +692,7 @@ body {
 {
   position: relative;
   border: px solid rgb(228, 29, 185);
-  
+  width: 100%;
 }
 .projects-logo
 {
@@ -678,7 +731,7 @@ body {
   margin: 10px;
   position: relative;
   transition: 0.9s ease;
-  
+  overflow: hidden;
   box-shadow: 0px 12px 18px -4px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 12px 18px -4px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 12px 18px -4px rgba(0,0,0,0.75);
@@ -731,7 +784,7 @@ body {
   justify-content: center;
   align-items: center;
   border: px solid red;
-  padding: 10px;
+  
   height: auto;
   width: 50%;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -790,12 +843,9 @@ body {
   color: #ffffff;
   font-weight: bold;
   margin: 10px;
-  transition: 0.3s ease;
+  
 }
-.projects-skills-card:hover
-{
-  transform: scale(1.04);
-}
+
 .projects-text-buttons
 {
   display: flex;
@@ -837,6 +887,13 @@ a {
   position: absolute;
   z-index: 1;
 }
+@media(max-width: 420px)
+{
+  .profileimage1
+  {
+    height: 500px;
+  }
+}
 /* css for responsive projects sections */
 @media (max-width: 900px) {
   .projects-card
@@ -848,11 +905,12 @@ a {
   {
     width: 150%;
     height: auto;
+    overflow: hidden;
     
   }
   .projects-card:hover img
   {
-    transform: scale(1.09); 
+    transform: scale(1.4); 
   }
   .projects-text
   {
@@ -865,13 +923,13 @@ a {
   
   .project-image
   {
-    width: 180%;
+    width: 200%;
     height: auto;
     
   }
   .projects-card:hover img
   {
-    transform: scale(1.03); 
+    transform: scale(1.4); 
   }
  .projects-text-title h1
  {
@@ -879,7 +937,7 @@ a {
  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
   .projects-card
   {

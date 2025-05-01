@@ -1,4 +1,4 @@
-import profileImg from './assets/profile5.png';
+import profileImg from './assets/happyprofile.png';
 import p1 from './assets/M2.png';
 import p2 from './assets/M5.png';
 import p3 from './assets/M8.png';

@@ -1,3 +1,5 @@
+
+import { motion } from "framer-motion";
 function ProjectsText ({title,description,link,code,skills})
 {   
     return(
@@ -10,7 +12,13 @@ function ProjectsText ({title,description,link,code,skills})
         </div>
         <div className="projects-skills-container">
         {skills.map((element,index)=>
-            element ? ( <div key={index} className="projects-skills-card">{element}</div>) : null
+            element ? ( <motion.div 
+                initial={{ opacity: 0, y: -50 }}       
+                whileInView={{ opacity: 1, y: 0 }}    
+                transition={{ duration: 0.8, ease:"easeOut"}}        
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.02,backgroundColor: "rgba(43, 150, 212, 0.9)"}}
+                key={index} className="projects-skills-card">{element}</motion.div>) : null
         )}
         </div>    
     
