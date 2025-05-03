@@ -8,17 +8,21 @@ import About from './About.jsx'
 import Titulo from './title.jsx'
 import BounceFooter from './BounceFooter.jsx'
 import Projects from './Projects.jsx'
+import Footer from "./Footer";
+import Contact from './Contact.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <NavBar />
     <HomePage></HomePage>
     <BounceFooter></BounceFooter>
-    <Titulo title={"My Work"}/>
+    <Titulo title={"My Work"} id={"Projects"}/>
     <Projects></Projects>
-    <Titulo title={"About."}/>
+    <Titulo title={"About."} id={"About"}/>
     <About></About>
-    <Titulo title={"Skills."}/>
+    <Titulo title={"Skills."} id={"Skills"}/>
     <SkillsPage></SkillsPage>
+    <Contact></Contact>
+    <Footer></Footer>
   </StrictMode>
 
 )

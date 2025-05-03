@@ -1,10 +1,10 @@
-import profileImg from './assets/happyprofile.png';
-import p1 from './assets/M2.png';
-import p2 from './assets/M5.png';
-import p3 from './assets/M8.png';
-import p4 from './assets/M4.png';
-import p5 from './assets/M6.png';
-import p6 from './assets/M7.png';
+import profileImg from './assets/happyprofile.webp';
+import p1 from './assets/projects1.webp';
+import p2 from './assets/projects2.webp';
+import p3 from './assets/projects3.webp';
+import p4 from './assets/projects4.webp';
+import p5 from './assets/projects5.webp';
+import p6 from './assets/projects6.webp';
 import ProjectsCard from './projects-card';
 import ProjectsText from './projects-text';
 function Projects()
@@ -17,9 +17,9 @@ function Projects()
                     </div>
                     
                     <div className="projects-container-card">
-                    <ProjectsCard image={p2}></ProjectsCard>
-                    <ProjectsText title={"3D Intros - Freelance"} skills={['Html','CSS','JavaScript','React','Api']} code={"https://github.com/camachi/3DIntros"} link={"https://camachi.github.io/3DIntros/"} description={"-Built an e-commerce site with React, HTML, CSS, and JavaScript. Integrated PayPal API to handle payments."}></ProjectsText>
                     <ProjectsCard image={p1}></ProjectsCard>
+                    <ProjectsText title={"3D Intros - Freelance"} skills={['Html','CSS','JavaScript','React','Api']} code={"https://github.com/camachi/3DIntros"} link={"https://camachi.github.io/3DIntros/"} description={"-Built an e-commerce site with React, HTML, CSS, and JavaScript. Integrated PayPal API to handle payments."}></ProjectsText>
+                    <ProjectsCard image={p2}></ProjectsCard>
                     <ProjectsText title={"DB Libros - Intership"} skills={['Html','CSS','JavaScript','Electron',"Sql"]} code={"https://github.com/camachi/Proyecto-DB-Libros"} description={"-Developed a Windows app with Electron and SQL to help professors recommend books and generate reports."}></ProjectsText>
                     <ProjectsCard image={p3}></ProjectsCard>
                     <ProjectsText title={"Crypto Overwatch"} skills={['Html','CSS','JavaScript','Api']} code={"https://github.com/camachi/Crypto-web"} link={"https://camachi.github.io/Crypto-web/"} description={"-Developed a web page using HTML, CSS, and JavaScript to display the top cryptocurrencies by fetching live data from an API."}></ProjectsText>

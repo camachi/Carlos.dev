@@ -15,11 +15,19 @@ import image13 from './assets/skills13.png';
 import image14 from './assets/skills14.png';
 import image15 from './assets/skills15.png';
 import SkillBar from "./Skillbar";
+import { motion} from "framer-motion";
+import img from './assets/profile4.webp';
+
+
 function SkillsPage()
 {
     return(
         <div className="skillspage-div">
+            <div className="skills-page-img">
+                <img className='profileimage' src={img} alt="Foto de perfil" />
+            </div>
             <TechSkills></TechSkills>
+            
             <div className="skills-title">
                 <h2><span className="colorp">Technologies </span>- I use.</h2>
             </div>

@@ -1,4 +1,4 @@
-import profileImg from './assets/profile3.png';
+import profileImg from './assets/profile3.webp';
 import arrowimg from './assets/arrow.png';
 import { motion } from 'framer-motion';
 function About()
@@ -18,6 +18,7 @@ function About()
             whileInView={{ opacity: 1, x: 0 }}
             transition={{duration: 0.8,ease: "easeOut" }}
             viewport={{ once: true }}
+            whileHover={{ scale: 1.017, boxShadow: "0px 2px 17px 0px rgba(1, 225, 255, 0.75)"}}
             className='about-content-card'>
                 <div className='about-card-title'>
                 <h5>Hi, my name is</h5>
@@ -40,7 +41,7 @@ function About()
                 I believe in clean, maintainable code and thoughtful UI/UX that enhances the user's journey.
                 </p>
                 <div className='about-card-title'>
-                <button className='hireme-button'>Hire Me! <img className='arrow-image' src={arrowimg} alt="arrow image svg" /></button>
+                <a href="mailto:carlosintelwork@gmail.com"><button className='hireme-button'>Hire Me! <img className='arrow-image' src={arrowimg} alt="arrow image svg" /></button></a>
                 
                 </div>
                 

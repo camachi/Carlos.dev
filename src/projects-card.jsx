@@ -2,7 +2,7 @@ function ProjectsCard({image})
 {
     return(
         <div className='projects-card'>
-        <img className='project-image' src={image}></img>
+        <img className='project-image'alt='projects image' src={image}></img>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import profileImg from './assets/profile2.png';
+import profileImg from './assets/profile2.webp';
 import {easeIn, motion,useScroll,useTransform} from "framer-motion";
 
 function HomePage()

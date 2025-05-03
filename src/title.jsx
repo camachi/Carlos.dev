@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-function Titulo ({title})
+function Titulo ({title,id})
 {
     return(
         <div className="title-div">
-            <motion.div className="title-line"
+            <motion.div className="title-line" id={id}
             initial={{ width: "0%"}}       
             whileInView={{ width: "80%" }}    
             transition={{ duration: 0.5, ease:"easeInOut"}}        

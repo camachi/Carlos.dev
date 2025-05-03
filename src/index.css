@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&display=swap');
+html
+{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -78,6 +82,38 @@ body {
   width: auto;
   position: relative;
   z-index: 1;
+}
+.skills-page-img
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border: px solid red;
+  z-index: 0;
+  top: 230px;
+  left: 0px;
+  
+}
+@media(max-width: 1136px)
+{
+  .skills-page-img
+  {
+    top: 350px;
+    left: 0px;
+    
+  }
+}
+@media(max-width:870px)
+{
+  .skills-page-img
+  {
+    top: 250px;
+    left: 0px;
+    
+  }
 }
 
 .homepage-imagen
@@ -297,8 +333,8 @@ body {
   background-color: white;
   width: 100%;
   height: 110vh;
-  margin-bottom: 150px;
-  margin-top: 150px;
+  margin-bottom: 120px;
+  margin-top: 120px;
   
 }
 .aboutpage-contenido
@@ -346,12 +382,6 @@ body {
   
 }
 
-.about-content-card:hover
-{ transform: scale(1.018);
-  box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
-  -webkit-box-shadow: 0px 2px 17px 0px rgba(9, 239, 255, 0.75);
-  -moz-box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
-}
 
 
 .aboutpage-image-div{
@@ -468,7 +498,7 @@ body {
   height: auto;
   width: 50%;
   border: px solid rebeccapurple;
-  
+  z-index: 1;
   gap: 15px;
 }
 @media(max-width: 750px)
@@ -491,7 +521,7 @@ body {
   border: 1px solid #8f8f8f;
   color: rgb(255, 255, 255);
   border-radius: 10px;
-  background-color: #ee812700;
+  background-color: #181818;
   padding: 5px 10px;
   gap: 8px;
   transition: 0.2s ease-in;
@@ -500,7 +530,7 @@ body {
 .tech-images
 { 
   width: 35px;
-  height:auto;
+  height: 35px;
 }
 
 @media(max-width: 430px)
@@ -516,7 +546,7 @@ body {
   }
 }
 .skills-card:hover{
-  background-color: #e5e5f70e;
+  background-color: #313131;
 }
 .skills-card h4{
   margin: 0px;
@@ -538,7 +568,7 @@ body {
   
   width: 50%;
   height: auto;
-
+  z-index: 1;
 }
 @media(max-width: 750px)
 {
@@ -562,6 +592,7 @@ body {
  border-top-right-radius: 60px;
  border-top-left-radius: 60px;
  margin-top: 80px;
+
 }
 
 @media(max-width: 750px)
@@ -595,20 +626,16 @@ body {
   height: auto;
   width: 300px;
   flex-direction: column;
+  background-color: #1f1f1f;
   padding: 20px;
   box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
   margin: 15px;
-  transition: 0.5s ease;
+  z-index: 1;
+ 
 }
-.tech-skills-card:hover
-{
-  transform: scale(1.05); 
-  box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
-  -webkit-box-shadow: 0px 2px 17px 0px rgba(9, 239, 255, 0.75);
-  -moz-box-shadow: 0px 2px 17px 0px rgba(1, 225, 255, 0.75);
-}
+
 .tech-logo-div
 {
   display: flex;
@@ -629,11 +656,11 @@ body {
   border-bottom: 1px solid white;
   color: #e5e5f7;
   font-family: "Cal Sans", sans-serif;
-  
+  z-index: 1;
 }
 .tech-skills-title h2{
   font-weight: 400;
-  
+  z-index: 1;
 }
 .skills-title p{
   font-family: 'Courier New', Courier, monospace;
@@ -668,7 +695,7 @@ body {
   margin-bottom: 10px;
   color: white;
   font-family: "Cal Sans", sans-serif;
-  
+  z-index: 1;
 }
 .skills-title h2{
   font-weight: 400;
@@ -816,8 +843,8 @@ body {
 }
 
 .code-button:hover{
-  width: 105px;
-  height: 32px;
+  transform: scale(1.07);
+  background-color: #181818;
 }
 
 .projects-skills-container
@@ -851,6 +878,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: px solid red;
+  width: 100%;
+  height: 100px;
   
 }
 .live-button
@@ -872,8 +902,8 @@ body {
 }
 .live-button:hover
 {
-  width: 105px;
-  height: 32px;
+  transform: scale(1.07);
+  background-color: #181818;
   
 }
 a {
@@ -884,6 +914,7 @@ a {
 .profileimage1
 {
   height: 600px;
+  width: auto;
   position: absolute;
   z-index: 1;
 }
@@ -895,7 +926,7 @@ a {
   }
 }
 /* css for responsive projects sections */
-@media (max-width: 900px) {
+@media (max-width: 915px) {
   .projects-card
   {
     width: 95%;
@@ -943,4 +974,176 @@ a {
   {
     height: 300px;
   }
+}
+/* Conctact css*/
+.contact-info-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #1f1f1f;
+  border: px solid red;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.contact-title
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: auto;
+  border: px solid white;
+  color: white;
+  font-family: "Cal Sans", sans-serif;
+  
+  
+}
+.contact-title h2{
+  margin: 0px;
+ 
+  font-weight: 400;
+  border-bottom: 2px solid #679ef1;
+}
+.contact-description
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border: px solid blue;
+  color: white;
+  z-index: 1;
+
+}
+.contact-description p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+ margin: 20px;
+}
+.social-div
+{
+  display: flex;
+  border: px solid blueviolet;
+  height: auto;
+  width: 50%;
+  flex-direction: column;
+  margin: 10px;
+}
+.social-title
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: auto;
+  color: white;
+  gap: 20px;
+  
+}
+.link-img
+{ 
+  height: 15px;
+  width: 15px;
+}
+.social-title p{
+  margin: 0px;
+}
+.social-title h3{
+  font-family: "Cal Sans", sans-serif;
+  border-bottom: 2px solid #679ef1;
+  font-weight: 400;
+  margin: 0;
+}
+.social-click-container
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: auto;
+  color: white;
+  cursor: pointer;
+}
+.social-click-container p{
+  border-bottom: 1px solid white;
+}
+.profile-img-contact
+{
+  height: 400px;
+  width: auto;
+  position: absolute;
+  
+}
+.contact-profile-img-container
+{position: relative;
+  display: flex;
+  top: -150px;
+  left: 150px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border: px solid orange;
+  z-index: 0;
+  
+}
+@media (max-width: 700px) {
+  .contact-profile-img-container
+  {
+    top: -140px;
+    left: 30px;
+  }
+  .contact-title
+  {
+    width: 95%;
+  }
+  .social-div
+  {
+    width: 95%;
+  }
+}
+
+/* footer css */
+
+.footer-container
+{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #181818;
+  color: rgb(216, 216, 216);
+  font-family: "Cal Sans", sans-serif;
+  
+}
+.footer-container p{
+  font-weight: 400;
+  font-size: 13px;
+}
+.footer-content
+{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(0, 0, 0);
+  align-items: center;
+  width: 80%;
+  height: auto;
+}
+.back-to-top
+{
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-size: 13px;
+}
+.back-to-top:hover
+{
+  transform: scale(1.1);
 }
