@@ -2,6 +2,7 @@
 html
 {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -336,6 +337,13 @@ body {
   margin-bottom: 120px;
   margin-top: 120px;
   
+  
+}
+@media(max-width: 375px)
+{
+  .aboutpage-div{
+    padding-top: 100px;
+  }
 }
 .aboutpage-contenido
 {
@@ -614,6 +622,7 @@ body {
   width: 100%;
   margin-top: 200px;
   margin-bottom: 200px;
+  overflow-x: hidden;
   
 }
 .tech-skills-card
@@ -1001,7 +1010,7 @@ a {
   border: px solid white;
   color: white;
   font-family: "Cal Sans", sans-serif;
-  
+  overflow: hidden;
   
 }
 .contact-title h2{
