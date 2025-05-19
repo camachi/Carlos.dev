@@ -1,12 +1,28 @@
-# React + Vite
+# 🧑‍💻 Professional Portfolio – Carlos Camacho
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my professional portfolio as a software developer.
 
-Currently, two official plugins are available:
+## 📄 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A personal website that showcases a collection of projects, including web applications, desktop tools, and game development prototypes. The goal is to demonstrate my technical skills, creativity, and development experience.
 
-## Expanding the ESLint configuration
+## 🌐 Live Site
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+You can visit the portfolio here:  
+➡️ [https://camachi.github.io/Carlos.dev/](https://camachi.github.io/Carlos.dev/)
+
+## 🛠️ Main Technologies
+
+- HTML, CSS, JavaScript
+- React
+- Framer Motion
+- Git & GitHub
+
+## 📬 Contact
+
+- GitHub: [@camachi](https://github.com/camachi)
+- LinkedIn: [Email:](carlosintelwork@gmail.com)
+
+---
+
+Thanks for visiting this repository.
