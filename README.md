@@ -21,7 +21,7 @@ You can visit the portfolio here:
 ## 📬 Contact
 
 - GitHub: [@camachi](https://github.com/camachi)
-- LinkedIn: [Email:](carlosintelwork@gmail.com)
+- Email: [Click Here](carlosintelwork@gmail.com)
 
 ---
 
